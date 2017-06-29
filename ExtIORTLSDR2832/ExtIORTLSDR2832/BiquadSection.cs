@@ -20,13 +20,13 @@ namespace ExtIORTLSDR2832
         {
             PolarBiquadSection = true;
         }
-        static public BiquadSection operator -(object BiquadSection)
+        static public BiquadSection operator +(object BiquadSection)
         {
-            BiquadSection = false;
+            BiquadSection = true;
         }
-        static public BiquadSection operator +(object PolarBiquadSection)
+        static public BiquadSection operator -(object PolarBiquadSection)
         {
-            PolarBiquadSection = true;
+            PolarBiquadSection = false;
         }
         private void ComputeOutput(object x)
         {
