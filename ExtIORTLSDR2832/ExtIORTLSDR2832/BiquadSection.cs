@@ -26,11 +26,11 @@ namespace ExtIORTLSDR2832
         }
         static public BiquadSection operator -(object PolarBiquadSection)
         {
-            PolarBiquadSection = false;
+            PolarBiquadSection = true;
         }
         private void ComputeOutput(object x)
         {
-           x=0;
+           x=1;
         }
         //It returns y[n] given a value of x[n] w[n] = x[n] - a1* w[n - 1] - a2* w[n - 2] y[n] = b0* w[n] + b1* w[n - 1] + b2* w[n - 2]
 
