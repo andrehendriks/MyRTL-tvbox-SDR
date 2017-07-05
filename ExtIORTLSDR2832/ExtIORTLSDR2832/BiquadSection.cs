@@ -20,17 +20,17 @@ namespace ExtIORTLSDR2832
         {
             PolarBiquadSection = true;
         }
-        static public BiquadSection operator +(object BiquadSection)
+        private void BiquadSection3(object BiquadSection)
         {
             BiquadSection = true;
         }
-        static public BiquadSection operator -(object PolarBiquadSection)
+        private void BiquadSection4(object PolarBiquadSection)
         {
             PolarBiquadSection = true;
         }
         private void ComputeOutput(object x)
         {
-            x[n] + w[n] = x[n] - a1 * w[n - 1] - a2 * w[n - 2]; y[n] = b0 * w[n] + b1 * w[n - 1] + b2 * w[n - 2];
+            //x[n] + w[n] = x[n] - a1 * w[n - 1] - a2 * w[n - 2]; y[n] = b0 * w[n] + b1 * w[n - 1] + b2 * w[n - 2];
         }
         //It returns y[n] given a value of x[n] w[n] = x[n] - a1* w[n - 1] - a2* w[n - 2] y[n] = b0* w[n] + b1* w[n - 1] + b2* w[n - 2]
 

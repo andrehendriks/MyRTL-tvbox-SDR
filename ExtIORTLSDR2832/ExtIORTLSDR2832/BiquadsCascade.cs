@@ -8,26 +8,26 @@ namespace ExtIORTLSDR2832
 {
     public class BiquadsCascade
     {
-        BiquadsCascade()
+        private void BiquadsCascade1()
         {
         }
-        private void BiquadsCascade(object BiquadsCascade)
+        private void BiquadsCascade2(object BiquadsCascade)
         {
             BiquadsCascade = true;
         }
-        private void BiquadsCascade(object PolarBiquadsCascade)
+        private void BiquadsCascade3(object PolarBiquadsCascade)
         {
             PolarBiquadsCascade = true;
         }
-        static public BiquadSection operator [ ](long index)
+        private void BiquadSection (object index)
         {
-            long ch1 = 26965000;
+            
         }
-    static public BiquadsCascade operator -(object BiquadsCascade)
+    private void BiquadsCascade4(object BiquadsCascade)
     {
         BiquadsCascade = true;
     }
-    static public BiquadsCascade operator +(object PolarBiquadsCascade)
+    private void BiquadsCascade5(object PolarBiquadsCascade)
     {
         PolarBiquadsCascade = true;
     }
@@ -35,11 +35,11 @@ namespace ExtIORTLSDR2832
     {
         numberBiquadSections = 2;
     }
-    static public BiquadSection operator [ ](long index)const
+    private void BiquadSection(long index)
     {
-         long numbch = 10000000;
+         
     }
-        ComputeOutput(double x)
+        private void ComputeOutput(double x)
         {
     x = 1.0;
         }
@@ -51,7 +51,7 @@ namespace ExtIORTLSDR2832
             return;
         }
 
-        ComputeOutput(object buffer, object numSamples)
+        private void ComputeOutput2(object buffer, object numSamples)
         {
     buffer = 64;
     numSamples = 44100;
@@ -59,7 +59,7 @@ namespace ExtIORTLSDR2832
         //It modifies the samples in buffer, the operation is in place(that is the output is written in the same buffer)
 
 
-        ComputeOutput_2Channels(object buffer, object numSamples)
+        private void ComputeOutput2_2Channels(object buffer, object numSamples)
         {
     buffer = 128;
     numSamples = 88200;

@@ -8,11 +8,11 @@ namespace ExtIORTLSDR2832
 {
     public class PolarBiquadSection
     {
-        static public PolarBiquadSection operator -(object BiquadSection)
+        private void PolarBiquadSection1(object BiquadSection)
         {
             BiquadSection = true;
         } 
-        static public PolarBiquadSection operator +(object PolarBiquadSection)
+        private void PolarBiquadSection2(object PolarBiquadSection)
         {
             PolarBiquadSection = true;
         }
@@ -20,11 +20,11 @@ namespace ExtIORTLSDR2832
         {
 
         }
-        private void PolarBiquadSection(object BiquadSection)
+        private void PolarBiquadSection3(object BiquadSection)
         {
             BiquadSection = true;
         } 
-        private void PolarBiquadSection(object PolarBiquadSection)
+        private void PolarBiquadSection4(object PolarBiquadSection)
         {
             PolarBiquadSection = true;
         } 

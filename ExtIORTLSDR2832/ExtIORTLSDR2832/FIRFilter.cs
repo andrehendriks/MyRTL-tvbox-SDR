@@ -12,13 +12,13 @@ namespace ExtIORTLSDR2832
         {
 
         }
-        private void Create(valarray<object> impulseResponse)
+        private void Create(object impulseResponse)
         {
             impulseResponse = true;
         }
         private void GenerateOutput(object input)
         {
-            input* impulseResponse = true;
+            
         }
         private void ClearTaps()
         {

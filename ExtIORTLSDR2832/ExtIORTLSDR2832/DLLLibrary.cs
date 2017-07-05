@@ -8,24 +8,24 @@ namespace ExtIORTLSDR2832
 {
     public class DLLLibrary
     {
-        DLLibrary()
+        private void DLLibrary()
         {
 
         }
 
-        public static FARPROC GetProcAddress(LPCSTR functionName)
+        private void GetProcAddress()
         {
 
         }
-        public static HINSTANCE GetHinstance()
+        private void GetHinstance()
         {
 
         }
-        private Load(object dllName)
+        private void Load(object dllName)
         {
             return;
         } 
-        private void Load(object wstring, dllName)
+        private void Load(object wstring,object dllName)
         {
 
         } 

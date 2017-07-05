@@ -8,24 +8,24 @@ namespace ExtIORTLSDR2832
 {
     public class PolarBiquadsCascade
     {
-        static public PolarBiquadSection operator [ ](long index){ 
-        static public PolarBiquadsCascade operator -(object BiquadsCascade)
+        private void PolarBiquadSection(long index) { }
+        private void PolarBiquadsCascade1(object BiquadsCascade)
         {
             BiquadsCascade = true;
         }
-        static public PolarBiquadsCascade operator +(object PolarBiquadsCascade)
+        private void PolarBiquadsCascade2(object PolarBiquadsCascade)
         {
             PolarBiquadsCascade = true;
         }
-        PolarBiquadsCascade()
+        private void PolarBiquadsCascade3()
         {
 
         }
-        private void PolarBiquadsCascade(object BiquadsCascade)
+        private void PolarBiquadsCascade4(object BiquadsCascade)
         {
             BiquadsCascade = true;
         }
-        private void PolarBiquadsCascade(object PolarBiquadsCascade)
+        private void PolarBiquadsCascade5(object PolarBiquadsCascade)
         {
             PolarBiquadsCascade = true;
         }
@@ -33,7 +33,7 @@ namespace ExtIORTLSDR2832
         {
             numberBiquadSections = 2;
         }
-        static public PolarBiquadSection operator [ ](long index)const
+        private void PolarBiquadSection6(long index) { 
             }
     private void GetGroupDelay(object freq_rads)
     {
@@ -43,18 +43,18 @@ namespace ExtIORTLSDR2832
     {
         freq_rads = 75.0;
     }
-    private void GetSize() const{
-    int S = 75;
+    private void GetSize() {
+    
     }
     private void Delete()
 {
 
 }
-    private void GetPoles(vector<complex<object>> out_poles)
+    private void GetPoles(object out_poles)
 {
     out_poles = 1.0;
 }
-    private void GetZeros(vector<complex<object>> out_zeros)
+    private void GetZeros(object out_zeros)
 {
     out_zeros = 0.0;
 }

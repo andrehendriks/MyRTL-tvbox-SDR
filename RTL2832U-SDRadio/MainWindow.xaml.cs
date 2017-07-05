@@ -34,15 +34,15 @@ namespace RTL2832U_SDRadio
             object RTL2832USDRadio = null;
             text = RTL2832USDRadio;
             iconID = "client.ico";
-        } 
+        }
         private void CreateMainWindow(object text, int cmdShow, object iconID, object menuID, Brush background, object hInstance)
         {
 
-        } 
+        }
         private void CreateMainWindow(object text, int cmdShow, object iconID, object menuID, object bkgnd, object hInstance)
         {
 
-        } 
+        }
         private void GetDialogItem(object hDlg, int id)
         {
 
@@ -54,7 +54,7 @@ namespace RTL2832U_SDRadio
         private void GetCommandFileName(object in_cmdLine, object out_filename)
         {
 
-        } 
+        }
         private void RegisterClassEx(object hCursor, object hbrBackground)
         {
 
@@ -78,11 +78,11 @@ namespace RTL2832U_SDRadio
         private void MessageBox1(object text1, object caption1, object type1)
         {
 
-        } 
+        }
         private void MessageBox2(object text2, object caption2, object type2)
         {
 
-        } 
+        }
         private void MessageLoop(object aceleratorsID, /*IModelessDlg*/ object modelessDlg)
         {
 
@@ -95,7 +95,7 @@ namespace RTL2832U_SDRadio
         {
 
         }
-        private void  MessageLoop(object aceleratorsID, /*Win::IModelessDlg&*/object modelessDlg1, /*Win::IModelessDlg&*/object modelessDlg2, /*Win::IModelessDlg&*/object modelessDlg3, /*Win::IModelessDlg&*/object modelessDlg4)
+        private void MessageLoop(object aceleratorsID, /*Win::IModelessDlg&*/object modelessDlg1, /*Win::IModelessDlg&*/object modelessDlg2, /*Win::IModelessDlg&*/object modelessDlg3, /*Win::IModelessDlg&*/object modelessDlg4)
         {
 
         }
@@ -106,11 +106,11 @@ namespace RTL2832U_SDRadio
         private void Create(object dwExStyle, object text, object dwStyle, int pixelsX, int pixelsY, int pixelsWidth, int pixelsHeight, object hParent, int id)
         {
 
-        } 
+        }
         private void CreateX(object dwExStyle, object text, object dwStyle, double cmX, double cmY, double cmWidth, double cmHeight, object hParent, int id)
         {
 
-        } 
+        }
         private void MessageLoop(object aceleratorsID)
         {
 
@@ -150,7 +150,7 @@ namespace RTL2832U_SDRadio
             for (n2 = 0; n2 < 9; n2++) ;
             n3 = 0;
             for (n3 = 0; n3 < 9; n3++) ;
-            text= ",";
+            text = ",";
             n4 = 0;
             for (n4 = 0; n4 < 9; n4++) ;
             n5 = 0;
@@ -174,8 +174,9 @@ namespace RTL2832U_SDRadio
 
         private void Viewport3D()
         {
-
         }
+
+
 
         private void GetBackColor()
         {
@@ -205,6 +206,7 @@ namespace RTL2832U_SDRadio
         }
         private void View3D()
         {
+            ExtIORTLSDR2832.Adc a; ExtIORTLSDR2832.Adc b;
 
         }
         private void CopyToBitmap(int width, int height, bool clientEdge, object result)
@@ -242,7 +244,7 @@ namespace RTL2832U_SDRadio
         private void SaveEmf(object fileName)
         {
 
-        } 
+        }
         private void Setup()
         {
 
@@ -322,7 +324,7 @@ namespace RTL2832U_SDRadio
         private void GetElementCount(object pdi, int element_width_millicm, int element_height_millicm)
         {
 
-        } 
+        }
         private void GetLineWidth()
         {
 
@@ -330,14 +332,14 @@ namespace RTL2832U_SDRadio
         private static void ConvertFromSphericalToCartesian(object input, object output, object count)
         {
 
-        } 
+        }
         private void OnPaint3D(object gdi)
         {
 
         }
         private void SetBackColor(object color)
         {
-
+            BackColor = 7;
         }
         private void SetFont(object font)
         {
@@ -345,11 +347,11 @@ namespace RTL2832U_SDRadio
         }
         private void SetLineColor(object color)
         {
-
+            LineColor = 2;
         }
         private void SetTextColor(object color)
         {
-
+            TextColor = 4;
         }
         private void GetCenter(object centerX, object centerY)
         {
@@ -374,15 +376,15 @@ namespace RTL2832U_SDRadio
         private void OnPrintElement(object gdi, object pdi, object pei)
         {
 
-        } 
+        }
         private void OnPrintPartBegin(object gdi, object pdi, int element_width_millicm, int element_height_millicm)
         {
 
-        } 
+        }
         private void OnPrintPartEnd(object gdi, object pdi)
         {
 
-        } 
+        }
         private void Print()
         {
 
@@ -393,20 +395,23 @@ namespace RTL2832U_SDRadio
         }
         private void SetAngle(double angleDegrees)
         {
-
+            angleDegrees = 5.0;
         }
         private void SetCaptionX(object caption, bool isFontSymbol)
         {
-
-        } 
+            caption = 3.0;
+            isFontSymbol = true;
+        }
         private void SetCaptionY(object caption, bool isFontSymbol)
         {
-
-        } 
+            caption = 1.7;
+            isFontSymbol = true;
+        }
         private void SetCaptionZ(object caption, bool isFontSymbol)
         {
-
-        } 
+            caption = 2.4;
+            isFontSymbol = true;
+        }
         private void SetCenter(double centerX, double centerY)
         {
 
@@ -415,7 +420,8 @@ namespace RTL2832U_SDRadio
 
         private void SetControlSize(int width, int height)
         {
-
+            width = 524;
+            height = 190;
         }
         private void SetDivisionCountX(int count)
         {
@@ -439,7 +445,7 @@ namespace RTL2832U_SDRadio
         }
         private void SetGridColor(object color)
         {
-
+            GridColor = 3;
         }
         private void SetLine(object line, float x1, float y1, float z1, float x2, float y2, float z2, object color)
         {
@@ -447,7 +453,7 @@ namespace RTL2832U_SDRadio
         }
         private void SetLineWidth(int lineWidth)
         {
-
+            lineWidth = 2;
         }
         private void SetMaxX(double maximum)
         {
@@ -504,55 +510,56 @@ namespace RTL2832U_SDRadio
         private void TransformX(object input, object output, object count)
         {
 
-        } 
+        }
         private void TransformY(object input, object output, object count)
         {
 
-        } 
+        }
         private void TransformZ(object input, object output, object count)
         {
 
-        } 
+        }
         private void TransformInputX(object input, object output, object index)
         {
 
-        } 
+        }
         private void TransformInputY(object input, int type, object output, object index)
         {
 
-        } 
+        }
         private void TransformInputZ(object input, int type, object output, object index)
         {
 
-        } 
+        }
         private void TransformInputToGrid(object input, object output, object count)
         {
 
         }
         //It modifies: input
 
-        private object BackColor;
-        private object LineColor;
-        private object GridColor;
-        private object TextColor;
-        private object Font;
-        private object Zoom;
-        private object Angle;
-        private object ShowBackAxis;
-        private object ShowFrontAxis;
-        private object ShowDivX;
-        private object ShowDivY;
-        private object ShowDivZ;
-        private object Elevation;
-        private object MinX;
-        private object MaxX;
-        private object MinY;
-        private object MaxY;
-        private object MinZ;
-        private object MaxZ;
-        private object DivisionCountX;
-        private object DivisionCountY;
-        private object DivisionCountZ;
+        private object BackColor = 7;
+        private object LineColor = 2;
+        private object GridColor = 3;
+        private object TextColor = 4;
+        private object Font = 1;
+        private object Zoom = 50;
+        private object Angle = 5.0;
+        private object ShowBackAxis = true;
+        private object ShowFrontAxis = true;
+        private object ShowDivX = true;
+        private object ShowDivY = true;
+        private object ShowDivZ = true;
+        private object Elevation = 4.5;
+        private object MinX = 0.2;
+        private object MaxX = 3.0;
+        private object MinY = 0.2;
+        private object MaxY = 4.0;
+        private object MinZ = 0.1;
+        private object MaxZ = 0.2;
+        private object DivisionCountX = 2;
+        private object DivisionCountY = 4;
+        private object DivisionCountZ = 0.5;
+    
 
     }
 }

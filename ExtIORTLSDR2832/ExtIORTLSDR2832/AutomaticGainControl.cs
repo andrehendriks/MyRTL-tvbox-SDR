@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class AutomaticGainControl
     {
-        Agc()
+        private void Agc()
         {
 
         }
@@ -26,7 +26,7 @@ namespace ExtIORTLSDR2832
         }
         private void ComputeOutput(object input)
         {
-            MaxGaindB = input + ForwardGainSpeed / BackwardGainSpeed;/*50.0=input+6.0/3.0*/
+
         }
         private void Reset()
         {
