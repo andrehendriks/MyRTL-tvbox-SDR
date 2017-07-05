@@ -1,0 +1,13 @@
+﻿<Window x:Name="RTL2832U_SDRadio" x:Class="RTL2832U_SDRadio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RTL2832U_SDRadio"
+        mc:Ignorable="d"
+        Title="RTL2832U-SDRadio" Height="400" Width="600" Background="DarkGray" BorderBrush="DarkBlue" BorderThickness="2,2,2,4" Icon="client.ico">
+    <Grid>
+        <Slider x:Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="30" AutoToolTipPlacement="TopLeft" Orientation="Vertical" LargeChange="2" Maximum="100" RenderTransformOrigin="3.044,0.653" ValueChanged="slider_ValueChanged"/>
+        <Viewport3D HorizontalAlignment="Left" Height="190" Margin="55,10,0,0" VerticalAlignment="Top" Width="524"/>
+    </Grid>
+</Window>

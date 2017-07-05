@@ -30,7 +30,7 @@ namespace ExtIORTLSDR2832
         }
         private void ComputeOutput(object x)
         {
-           x=1;
+            x[n] + w[n] = x[n] - a1 * w[n - 1] - a2 * w[n - 2]; y[n] = b0 * w[n] + b1 * w[n - 1] + b2 * w[n - 2];
         }
         //It returns y[n] given a value of x[n] w[n] = x[n] - a1* w[n - 1] - a2* w[n - 2] y[n] = b0* w[n] + b1* w[n - 1] + b2* w[n - 2]
 
