@@ -23,6 +23,7 @@ namespace RTL2832U_SDRadio
     {
         public MainWindow()
         {
+            Viewport3D View3D_ValueChanged = new Viewport3D();
             DrawingCollection Digit = new DrawingCollection();
             InitializeComponent();
         }
@@ -172,11 +173,9 @@ namespace RTL2832U_SDRadio
             object BiquadFilter = (50.0);
         }
 
-        private void Viewport3D()
-        {
-        }
-
-
+        //        private void Viewport3D(bool isVisible)
+        //        {
+        //        }
 
         private void GetBackColor()
         {
@@ -204,9 +203,9 @@ namespace RTL2832U_SDRadio
         {
 
         }
-        private void View3D()
+        private void View3D(bool isVisible)
         {
-            ExtIORTLSDR2832.Adc a; ExtIORTLSDR2832.Adc b;
+            ExtIORTLSDR2832.Adc Adc;
 
         }
         private void CopyToBitmap(int width, int height, bool clientEdge, object result)
@@ -335,7 +334,7 @@ namespace RTL2832U_SDRadio
         }
         private void OnPaint3D(object gdi)
         {
-
+            gdi = 7;
         }
         private void SetBackColor(object color)
         {
@@ -559,7 +558,96 @@ namespace RTL2832U_SDRadio
         private object DivisionCountX = 2;
         private object DivisionCountY = 4;
         private object DivisionCountZ = 0.5;
-    
 
+
+
+        private void a_Checked(object sender, RoutedEventArgs e)
+        {
+            
+                ExtIORTLSDR2832.BiquadFilter CreateLowPass;
+            
+        }
+
+        private void b_Checked(object sender, RoutedEventArgs e)
+        {
+            ExtIORTLSDR2832.BiquadFilter CreateHighPass;
+        }
+        
+        private void onbutton_Click(object sender, RoutedEventArgs e)
+        {
+         
+            this.onbutton.IsEnabled = false;
+            this.offbutton.IsEnabled = true;
+        }
+
+
+        private void offbutton_Click(object sender, RoutedEventArgs e)
+        {
+            this.onbutton.IsEnabled = true;
+            this.offbutton.IsEnabled = true;
+            object AdcInput = null;
+            AdcInput = 0;
+        }
+
+
+        private object scaleTime=50;
+        private object scaleAmplitude1 = 50;
+        private object scaleAmplitude2 = 50;
+        private double CaptionX;
+        private double CaptionY;
+        private int OSCILLOSCOPE_POINTS;
+        private int MILLISECONDS_PERIOD;
+        private int Graphs;
+        //        private int Graphs;
+        private object x;
+        private object RefreshAll;
+        private object y;
+        private object Add;
+        private object RGB;
+        private int Color;
+        private int RangeBase;
+        private void Oscilloscope()
+        {
+            CaptionX = 6.28;
+            CaptionY = 3.8;
+            MinX = 0.0;
+            MaxX = OSCILLOSCOPE_POINTS*MILLISECONDS_PERIOD;
+            MinY = -160000;
+            MaxY = 160000;
+            int OSCILLOSCOPE_POINTS_CH1 = 0;
+            int OSCILLOSCOPE_POINTS_CH2 = 1;
+            for (int i = 0;i < OSCILLOSCOPE_POINTS; i++)
+            {
+                x = i * MILLISECONDS_PERIOD;
+                y = 0.0;
+                x = i * MILLISECONDS_PERIOD;
+                y = 0.0;
+
+            }
+            Color = 3;
+            Color = 5;
+
+            // RefreshAll();
+
+
+            
+
+        }
+
+        private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Vector slider1 = new Vector(0, 50);
+        }
+
+        private void slider2_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Vector slider2 = new Vector(0, 50);
+        }
+
+        private void sldTime_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Vector sldTime = new Vector(0, 100);
+            Vector position = new Vector(0, 50);
+        }
     }
 }

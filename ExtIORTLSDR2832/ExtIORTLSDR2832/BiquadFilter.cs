@@ -10,6 +10,7 @@ namespace ExtIORTLSDR2832
     {
         BiquadFilter()
         {
+            
         }
 
         private void CreateLowPass(object cutFreq_rads, object passBand_dB, object stopFreq_rads, object stopBand_dB)
