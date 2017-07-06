@@ -647,7 +647,7 @@ namespace RTL2832U_SDRadio
         private void sldTime_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             Vector sldTime = new Vector(0, 100);
-            Vector position = new Vector(0, 50);
+            Vector position = new Vector(50, 100);
         }
     }
 }
