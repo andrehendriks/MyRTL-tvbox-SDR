@@ -1,9 +1,10 @@
-﻿<Window x:Name="RTL2832U_SDRadio" x:Class="RTL2832U_SDRadio.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RTL2832U_SDRadio"
+        xmlns:local1="clr-namespace:RTL2832U_SDRadio;assembly=RTL2832U-SDRadio" x:Name="RTL2832U_SDRadio" x:Class="RTL2832U_SDRadio.MainWindow" x:Subclass="RTL2832U_SDRadio.SignalView"
         mc:Ignorable="d"
         Title="RTL2832U-SDRadio" Height="400" Width="786.667" Background="DarkGray" BorderBrush="DarkBlue" BorderThickness="2,2,2,4" Icon="client.ico">
     <Grid>
@@ -11,9 +12,6 @@
         <CheckBox x:Name="a" Content="LowPass" HorizontalAlignment="Left" Margin="55,221,0,0" VerticalAlignment="Top" IsChecked="True" Checked="a_Checked"/>
         <CheckBox x:Name="b" Content="HighPass" HorizontalAlignment="Left" Margin="151,221,0,0" VerticalAlignment="Top" Checked="b_Checked"/>
         <Label x:Name="label" Content="Squelch" HorizontalAlignment="Left" Margin="0,217,0,0" VerticalAlignment="Top"/>
-        <Viewport3D x:Name="xyDisplay" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Height="190" Width="524"/>
-
-        <Grid x:Name="TransformToGrid" HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="524" Margin="50,10,0,0" Background="White" OpacityMask="Blue"/>
         <Slider x:Name="slider1" HorizontalAlignment="Left" Margin="607,55,0,0" VerticalAlignment="Top" Orientation="Vertical" Height="145" Width="17" ValueChanged="slider1_ValueChanged"/>
         <Slider x:Name="slider2" HorizontalAlignment="Left" Margin="657,55,0,0" VerticalAlignment="Top" Orientation="Vertical" Height="145" Width="17" ValueChanged="slider2_ValueChanged"/>
         <Label x:Name="c1" Content="ch1" HorizontalAlignment="Left" Margin="607,10,0,0" VerticalAlignment="Top"/>
@@ -21,6 +19,12 @@
         <Button x:Name="onbutton" Content="on" HorizontalAlignment="Left" Margin="30,279,0,0" VerticalAlignment="Top" Width="75" Click="onbutton_Click"/>
         <Button x:Name="offbutton" Content="off" HorizontalAlignment="Left" Margin="119,279,0,0" VerticalAlignment="Top" Width="75" Click="offbutton_Click"/>
         <Slider x:Name="sldTime" HorizontalAlignment="Left" Margin="267,279,0,0" VerticalAlignment="Top" Height="20" Width="307" ValueChanged="sldTime_ValueChanged"/>
+        <Viewbox x:Name="Display" HorizontalAlignment="Left" Height="190" Margin="35,10,0,0" VerticalAlignment="Top" Width="539" OpacityMask="White" Clip="" IsVisibleChanged="Display_IsVisibleChanged">
 
+            <Viewbox.DataContext>
+                <local1:SignalView x:Name="SignalView" BorderThickness="2" Content="Display" Tag="SignalView"/>
+            </Viewbox.DataContext>
+
+        </Viewbox>
     </Grid>
 </Window>
