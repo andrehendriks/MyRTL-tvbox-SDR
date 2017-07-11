@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class FIRFilter
     {
-        FIRFilter()
+        public FIRFilter()
         {
 
         }

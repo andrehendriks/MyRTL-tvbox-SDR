@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class BiquadsCascade
     {
-        private void BiquadsCascade1()
+        public BiquadsCascade()
         {
         }
         private void BiquadsCascade2(object BiquadsCascade)

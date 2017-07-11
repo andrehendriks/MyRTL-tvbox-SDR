@@ -13,7 +13,7 @@ namespace ExtIORTLSDR2832
         public object Q { get; private set; }
         public object I { get; private set; }
 
-        FmDemodulator()
+        public FmDemodulator()
         {
             /*InitializeComponent();*/
         }

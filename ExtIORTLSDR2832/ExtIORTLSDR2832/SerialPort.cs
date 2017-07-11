@@ -13,7 +13,7 @@ namespace ExtIORTLSDR2832
         public object DCB { get; private set; }
         public object dcb { get; private set; }
 
-        SerialPort()
+        public SerialPort()
         {
              
         

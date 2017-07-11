@@ -9,7 +9,7 @@ namespace ExtIORTLSDR2832
 {
     public class SysLink
     {
-        SysLink()
+        public SysLink()
         {
 
         }

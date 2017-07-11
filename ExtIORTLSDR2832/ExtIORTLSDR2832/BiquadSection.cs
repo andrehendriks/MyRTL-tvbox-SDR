@@ -9,7 +9,7 @@ namespace ExtIORTLSDR2832
 
     public class BiquadSection /*H(z) = (b0 + b1 * z^-1 + b2 * z ^-2) / (1 + a1 * z^-1 + a2 * z ^-2)*/
     {
-        BiquadSection()
+        public BiquadSection()
         {
         }
         private void BiquadSection1(object IIRBiquadSection)

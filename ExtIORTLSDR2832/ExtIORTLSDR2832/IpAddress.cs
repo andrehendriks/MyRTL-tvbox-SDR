@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class IpAddress
     {
-        IpAddress()
+        public IpAddress()
         {
             IsBlank();
         }

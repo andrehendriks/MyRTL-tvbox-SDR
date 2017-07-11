@@ -16,7 +16,7 @@ namespace ExtIORTLSDR2832
         {
             PolarBiquadSection = true;
         }
-        PolarBiquadSection()
+        public PolarBiquadSection()
         {
 
         }

@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExtIORTLSDR2832;
 
 namespace RTL2832U_SDRadio
 {
     public partial class SignalView : MainWindow
     {
         
-        private object GetCh1Color;
-        private object GetCh2Color;
-        public SignalView()
+        private void GetCh1Color(object color)
         {
 
+        }
+        private void GetCh2Color(object color)
+        {
+
+        }
+        public SignalView()
+        {
+            Adc LowA = new Adc(); 
+            InitializeComponent();
         }
         private void isEvent(object e, int notification)
         {
@@ -30,14 +38,20 @@ namespace RTL2832U_SDRadio
 
         private void OnData(object lParam)
         {
-
+            lParam = IsActive;
         }
         private void SetToZero()
         {
 
         }
-        private object Ch1Color;
-        private object Ch2Color;
+        private void Ch1Color(object color)
+        {
+            color = ConsoleColor.Blue;
+        }
+        private void Ch2Color(object color)
+        {
+            color = ConsoleColor.Red;
+        }
 
     }
 }

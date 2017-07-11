@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RTL2832U_SDRadio"
-        xmlns:local1="clr-namespace:RTL2832U_SDRadio;assembly=RTL2832U-SDRadio" x:Name="RTL2832U_SDRadio" x:Class="RTL2832U_SDRadio.MainWindow" x:Subclass="RTL2832U_SDRadio.SignalView"
+        xmlns:local1="clr-namespace:RTL2832U_SDRadio;assembly=RTL2832U-SDRadio" x:Name="RTL2832U_SDRadio" x:Class="RTL2832U_SDRadio.MainWindow" 
         mc:Ignorable="d"
         Title="RTL2832U-SDRadio" Height="400" Width="786.667" Background="DarkGray" BorderBrush="DarkBlue" BorderThickness="2,2,2,4" Icon="client.ico">
     <Grid>
@@ -21,9 +21,7 @@
         <Slider x:Name="sldTime" HorizontalAlignment="Left" Margin="267,279,0,0" VerticalAlignment="Top" Height="20" Width="307" ValueChanged="sldTime_ValueChanged"/>
         <Viewbox x:Name="Display" HorizontalAlignment="Left" Height="190" Margin="35,10,0,0" VerticalAlignment="Top" Width="539" OpacityMask="White" Clip="" IsVisibleChanged="Display_IsVisibleChanged">
 
-            <Viewbox.DataContext>
-                <local1:SignalView x:Name="SignalView" BorderThickness="2" Content="Display" Tag="SignalView"/>
-            </Viewbox.DataContext>
+            
 
         </Viewbox>
     </Grid>

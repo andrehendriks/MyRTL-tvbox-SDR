@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class BiquadFilter
     {
-        BiquadFilter()
+        public BiquadFilter()
         {
             
         }

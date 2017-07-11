@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class AutomaticGainControl
     {
-        private void Agc()
+        public void Agc()
         {
 
         }

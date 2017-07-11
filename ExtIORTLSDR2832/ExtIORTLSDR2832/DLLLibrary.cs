@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class DLLLibrary
     {
-        private void DLLibrary()
+        public void DLLibrary()
         {
 
         }

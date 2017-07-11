@@ -8,7 +8,7 @@ namespace ExtIORTLSDR2832
 {
     public class Dac
     {
-        Dac()
+        public Dac()
         {
         }
         private void IsEvent(object Event, object notification)
