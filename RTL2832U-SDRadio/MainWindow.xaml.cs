@@ -166,11 +166,7 @@ namespace RTL2832U_SDRadio
             for (n9 = 0; n9 < 9; n9++) ;
         }
         
-        private void Viewbox_Display(object sender, AssemblyLoadEventArgs e)
-        {
-            SignalView Display = new SignalView();
-            return;
-        }
+        
 
         private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
@@ -192,9 +188,10 @@ namespace RTL2832U_SDRadio
         
         private void onbutton_Click(object sender, RoutedEventArgs e)
         {
-         
             this.onbutton.IsEnabled = false;
             this.offbutton.IsEnabled = true;
+            object AdcInput = null;
+            AdcInput = 1;
         }
 
 
@@ -221,9 +218,13 @@ namespace RTL2832U_SDRadio
             Vector position = new Vector(50, 100);
         }
 
-        private void Display_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        private void Display(object sender,EventArgs e)
         {
-            SignalView Display = new SignalView();
+            SignalView on = new SignalView();
+        }
+
+        private void LayoutUpdatedOn(object sender, EventArgs e)
+        {
             return;
         }
     }

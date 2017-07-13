@@ -7,7 +7,7 @@
         xmlns:local1="clr-namespace:RTL2832U_SDRadio;assembly=RTL2832U-SDRadio" x:Name="RTL2832U_SDRadio" x:Class="RTL2832U_SDRadio.MainWindow" 
         mc:Ignorable="d"
         Title="RTL2832U-SDRadio" Height="400" Width="786.667" Background="DarkGray" BorderBrush="DarkBlue" BorderThickness="2,2,2,4" Icon="client.ico">
-    <Grid>
+    <Grid LayoutUpdated="LayoutUpdatedOn">
         <Slider x:Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="30" AutoToolTipPlacement="TopLeft" Orientation="Vertical" LargeChange="2" Maximum="100" RenderTransformOrigin="3.044,0.653" ValueChanged="slider_ValueChanged"/>
         <CheckBox x:Name="a" Content="LowPass" HorizontalAlignment="Left" Margin="55,221,0,0" VerticalAlignment="Top" IsChecked="True" Checked="a_Checked"/>
         <CheckBox x:Name="b" Content="HighPass" HorizontalAlignment="Left" Margin="151,221,0,0" VerticalAlignment="Top" Checked="b_Checked"/>
@@ -19,10 +19,10 @@
         <Button x:Name="onbutton" Content="on" HorizontalAlignment="Left" Margin="30,279,0,0" VerticalAlignment="Top" Width="75" Click="onbutton_Click"/>
         <Button x:Name="offbutton" Content="off" HorizontalAlignment="Left" Margin="119,279,0,0" VerticalAlignment="Top" Width="75" Click="offbutton_Click"/>
         <Slider x:Name="sldTime" HorizontalAlignment="Left" Margin="267,279,0,0" VerticalAlignment="Top" Height="20" Width="307" ValueChanged="sldTime_ValueChanged"/>
-        <Viewbox x:Name="Display" HorizontalAlignment="Left" Height="190" Margin="35,10,0,0" VerticalAlignment="Top" Width="539" OpacityMask="White" Clip="" IsVisibleChanged="Display_IsVisibleChanged">
+        <Canvas Margin="35,10,202,164.667">
+            <Image x:Name="AdcInput" HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="539" Opacity="0" IsEnabled="True" IsHitTestVisible="True"/>
 
-            
+        </Canvas>
 
-        </Viewbox>
     </Grid>
 </Window>
