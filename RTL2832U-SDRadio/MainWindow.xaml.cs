@@ -227,5 +227,11 @@ namespace RTL2832U_SDRadio
         {
             return;
         }
+
+        private void Canvas_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+            IDataTransfer xyDisplay = new IDataTransfer();
+            Adc AdcIput = new Adc();
+        }
     }
 }

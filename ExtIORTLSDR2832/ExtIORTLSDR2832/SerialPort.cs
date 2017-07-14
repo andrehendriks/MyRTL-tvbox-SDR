@@ -9,7 +9,6 @@ namespace ExtIORTLSDR2832
 {
     public class SerialPort
     {
-        public object COM { get; private set; }
         public object DCB { get; private set; }
         public object dcb { get; private set; }
 
@@ -67,7 +66,7 @@ namespace ExtIORTLSDR2832
         
         private void Open()
         {
-            COM =28888;
+            
             DCB = true; 
             dcb= true;
         }

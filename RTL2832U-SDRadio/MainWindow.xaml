@@ -19,10 +19,7 @@
         <Button x:Name="onbutton" Content="on" HorizontalAlignment="Left" Margin="30,279,0,0" VerticalAlignment="Top" Width="75" Click="onbutton_Click"/>
         <Button x:Name="offbutton" Content="off" HorizontalAlignment="Left" Margin="119,279,0,0" VerticalAlignment="Top" Width="75" Click="offbutton_Click"/>
         <Slider x:Name="sldTime" HorizontalAlignment="Left" Margin="267,279,0,0" VerticalAlignment="Top" Height="20" Width="307" ValueChanged="sldTime_ValueChanged"/>
-        <Canvas Margin="35,10,202,164.667">
-            <Image x:Name="AdcInput" HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="539" Opacity="0" IsEnabled="True" IsHitTestVisible="True"/>
-
-        </Canvas>
+        <Canvas x:Name="xyDisplay" HorizontalAlignment="Left" Height="190" Margin="35,10,0,0" VerticalAlignment="Top" Width="539" SourceUpdated="Canvas_SourceUpdated"/>
 
     </Grid>
 </Window>
